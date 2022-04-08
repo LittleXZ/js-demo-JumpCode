@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+#info{
+    word-break: break-all;
+}
+#taiji:before{
+    content: '';
+    position: relative;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+}
+#taiji:after{
+    content: '';
+    position: relative;
+    display: block;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+}
+@media screen and (max-width: 900px) {
+    #info {
+        height: 50vh;
+        overflow: auto;
+    }
+    #wrap {
+        position: relative;
+        height: 50vh;
+    }
+}
